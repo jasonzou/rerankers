@@ -83,3 +83,10 @@ try:
     AVAILABLE_RANKERS["PyLateRanker"] = PyLateRanker
 except ImportError:
     pass
+
+try:
+    from rerankers.models.qwen3_ranker import Qwen3Ranker
+
+    AVAILABLE_RANKERS["Qwen3Ranker"] = Qwen3Ranker
+except ImportError:
+    pass
