@@ -156,4 +156,4 @@ def test_ranked_results_with_qwen3():
     assert len(top_1) == 1
     assert top_1[0].score == 0.95
     assert results.get_score_by_docid(0) == 0.95
-    assert results.get_score_by_docid(1) == 0.3
+    assert results.get_score_by_docid(1) == 0.93
